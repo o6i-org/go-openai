@@ -11,6 +11,7 @@ type ChatCompletionStreamChoiceDelta struct {
 	FunctionCall *FunctionCall `json:"function_call,omitempty"`
 	ToolCalls    []ToolCall    `json:"tool_calls,omitempty"`
 	Refusal      string        `json:"refusal,omitempty"`
+	Reasoning    string        `json:"reasoning,omitempty"`
 }
 
 type ChatCompletionStreamChoiceLogprobs struct {
