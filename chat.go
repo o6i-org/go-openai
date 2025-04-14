@@ -263,6 +263,10 @@ type ChatCompletionRequest struct {
 	ReasoningEffort string `json:"reasoning_effort,omitempty"`
 	// Metadata to store with the completion.
 	Metadata map[string]string `json:"metadata,omitempty"`
+
+	// Compat. for GroqCloud. parsed, raw, or hidden.
+	// Must be set to either parsed or hidden when using tool calling or JSON mode.
+	ReasoningFormat string `json:"reasoning_format,omitempty"`
 }
 
 type StreamOptions struct {
